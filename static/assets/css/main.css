@@ -114,7 +114,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     border: 0.0625rem solid #E5E7EB;
     border-radius: 1rem;
     border-color: #E5E7EB;
-    padding: 3rem;
+    padding: 3rem 3rem 1.5rem 3rem
 }
 
 label {
@@ -139,10 +139,10 @@ label {
 
 .form-control:focus{
     outline: 0 !important;
-    border-color: #ffff !important;
+    color: #52547a;
+    background-color: #fff;
+    border-color: #4d62a3;
 }
-
-
 
 .btn {
     display: inline-block;
@@ -161,6 +161,11 @@ label {
     border-radius: 1rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
 }
+
+.btn-wrapper {
+    margin-top: 3rem;
+}
+
 .btn:hover {
     color: #1F2937; 
 }
@@ -198,6 +203,45 @@ fieldset:disabled .btn {
     color: #ffffff;
     background-color: #1f2741;
     border-color: #1d253d; 
+}
+
+.btn-google {
+    width: 5rem;
+    height: 4rem;
+    border-radius: 0.875rem;
+    color: #E5E7EB;
+    border-color: #E5E7EB;
+}
+
+.btn-google:hover {
+    color: #1c2540;
+    background-color: #E5E7EB;
+    border-color: #E5E7EB;
+    box-shadow: 0 0 0 0.2rem rgba(229, 231, 235, 0.5);
+}
+
+.text-border:before {
+    right: 0.5em;
+    margin-left: -50%;
+    background: linear-gradient(90deg, transparent, rgba(117, 117, 117, 0.4), rgba(117, 117, 117, 0.4));
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.text-border:after {
+    left: 0.5em;
+    margin-right: -50%;
+    background: linear-gradient(90deg, transparent, rgba(117, 117, 117, 0.4), rgba(117, 117, 117, 0.4));
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
 }
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
