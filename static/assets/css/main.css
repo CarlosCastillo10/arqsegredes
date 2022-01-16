@@ -249,6 +249,10 @@ fieldset:disabled .btn {
     vertical-align: middle;
 }
 
+.text-gray {
+    color: #424767 !important; 
+}
+
 .text-primary {
     color: #242e4c !important; 
 }
@@ -256,6 +260,12 @@ fieldset:disabled .btn {
 
 .text-white, .text-white:hover {
     color: #ffffff !important; 
+}
+
+@media (min-width: 768px) {
+    .text-md-left {
+      text-align: left !important; 
+    }
 }
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -345,6 +355,7 @@ fieldset:disabled .btn {
 
 .nav-link {
     color: #fff; 
+    outline: none;
 }
 
 .nav-link:hover, 
@@ -380,8 +391,13 @@ fieldset:disabled .btn {
     border: 0;
 }
 
-.dropdown:hover,  .dropdown:focus{
+.dropdown:hover,  .dropdown:focus {
     border:none;
+    outline: none !important
+}
+
+.dropdown:focus-visible {
+    outline: none;
 }
 
 .dropdown-toggle::after {
@@ -421,6 +437,26 @@ fieldset:disabled .btn {
     color: #893168 !important;
 }
 
+.user-info img {
+    width: 37px;
+    border-radius: 50%;
+}
+
+.user-info .user-name {
+    margin-top: 1rem;
+}
+
+.user-info span {
+    color: #fff;
+}
+
+.user-info:hover {
+    cursor: pointer;
+}
+
+.user-info:hover .user-name{
+    color: #893168 !important;
+}
 
 @media (max-width: 991.98px) {
 
@@ -494,6 +530,10 @@ fieldset:disabled .btn {
         animation: hide-navbar-collapse .2s ease forwards; 
     }
 
+    .card-img-top {
+        height: 100% !important;
+    }
+
 }
 
 @keyframes show-navbar-collapse {
@@ -522,6 +562,10 @@ fieldset:disabled .btn {
 
 
 @media (min-width: 992px) {
+
+    .card-img-top {
+        height: 100% !important;
+    }
 
     .navbar-nav .dropdown-megamenu {
         left: 50%;
@@ -554,15 +598,34 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 576px) {
+    .card-img-top {
+        height: 300px !important;
+    }
+
     .section-header {
         position: relative;
         padding-top: 10rem;
         padding-bottom: 6rem;
     }
+
+    .section {
+        position: relative;
+        padding-top: 6rem;
+        padding-bottom: 6rem; 
+    }
+
+    .section-lg {
+        padding-top: 8rem;
+        padding-bottom: 8rem; 
+    }
 }
 
 .bg-secondary {
     background-color: #1c2540 !important;
+}
+
+.bg-gray {
+    background-color: #E5E7EB !important; 
 }
 
 .header-title {
@@ -577,4 +640,36 @@ figure {
 
 .fill-white {
     fill: #fff;
+}
+
+/*========== SECTION =======*/
+.section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem 0.5rem rgba(0,0,0,.15) !important;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.icon-facebook, .icon-facebook:hover {
+    color: #0d6efd;
+}
+
+.icon-twitter, .icon-twitter:hover {
+    color: #1d9bf0;
+}
+
+.icon-github, .icon-github:hover {
+    color: #0b0f18;
+}
+
+.icon-linkedin, .icon-linkedin:hover {
+    color: #0a66c2;
 }

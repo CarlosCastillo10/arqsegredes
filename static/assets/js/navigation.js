@@ -44,4 +44,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
             
         });
     }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 300,
+        speedAsDuration: true
+    });
 });
