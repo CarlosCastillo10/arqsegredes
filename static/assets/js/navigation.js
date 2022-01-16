@@ -20,6 +20,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         headroom.init();
     }
 
+    var navlinks = document.querySelectorAll('.nav-link');
+    document.getElementById("home").addEventListener('click', function () {
+        closeNavBar();
+    })
+
+    document.getElementById("team").addEventListener('click', function () {
+        closeNavBar();
+    })
+
     // dropdowns to show on hover when desktop
     if (document.body.clientWidth > breakpoints.lg) {
         var dropdownElementList = [].slice.call(document.querySelectorAll('.navbar .dropdown-toggle'))
@@ -50,3 +59,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         speedAsDuration: true
     });
 });
+
+function closeNavBar(){
+    if (document.getElementById('navbar_global').classList.contains('show')){
+        document.getElementById('close-btn').click();
+    } 
+}
