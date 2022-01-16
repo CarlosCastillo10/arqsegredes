@@ -328,6 +328,22 @@ fieldset:disabled .btn {
     transition: all 0.2s ease; 
 }
 
+.position-fixed, .headroom--pinned, .headroom--unpinned {
+    position: fixed !important; 
+}
+
+.headroom--pinned {
+    transform: translateY(0%); 
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%); 
+}
+
+.headroom--not-top.navbar-theme-primary {
+    background-color: #1c2540;
+}
+
 /******/
 @media (prefers-reduced-motion: reduce) {
     .headroom {
@@ -392,6 +408,7 @@ fieldset:disabled .btn {
 }
 
 .navbar .navbar-nav .dropdown-megamenu {
+    margin-top: -0.1rem;
     border: 0;
 }
 
